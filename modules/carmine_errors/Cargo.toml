@@ -1,10 +1,9 @@
 [package]
-name = "carmine_exports"
+name = "carmine_errors"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-carmine_app = { path = "../carmine_app/" }
-carmine_errors = { path = "../carmine_errors/" }
+thiserror = "1.0.58"
