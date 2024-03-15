@@ -1,3 +1,5 @@
+use std::error::Error;
+
 use crate::event::Event;
 
 pub struct EventDispatcher<'a, T>
@@ -15,11 +17,12 @@ where
         EventDispatcher { event }
     }
 
-    pub fn dispatch<F>(&mut self, event: F)
+    pub fn dispatch<F>(&mut self, event: F) -> Result<(), EventDispatchError>
     where
         F: Fn(&T) -> bool,
     {
         let event_ret = event(self.event);
         self.event.set_handled(event_ret);
+        Ok(())
     }
 }

@@ -1,3 +1,5 @@
-mod errors;
+mod error;
+mod event_dispatch_error;
+mod user_error;
 
-pub use errors::CarmineError;
+pub use error::CarmineError;

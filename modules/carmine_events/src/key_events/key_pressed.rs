@@ -32,7 +32,7 @@ impl Event for KeyPressed {
     }
     #[inline]
     fn set_handled(&mut self, is_handled: bool) {
-        self.is_handled = is_handled;
+        self.is_handled |= is_handled;
     }
     #[inline]
     fn get_category_flags() -> u8 {
