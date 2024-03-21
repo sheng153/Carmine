@@ -9,4 +9,4 @@ edition = "2021"
 carmine_app = { path = "../carmine_app/" }
 carmine_errors = { path = "../carmine_errors/" }
 carmine_logging = { path = "../carmine_logging/" }
-carmine_events = { path = "../carmine_events/" }
+events = { path = "../carmine_events/events/" }
