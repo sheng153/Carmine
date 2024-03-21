@@ -9,4 +9,4 @@
 /modules/carmine_logging/target
 /modules/carmine_math/target
 /modules/carmine_render/target
-/modules/carmine_wrappers/target
+/modules/carmine_wrappers/target/
