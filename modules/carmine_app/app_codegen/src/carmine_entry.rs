@@ -7,7 +7,7 @@ pub fn carmine_entry(_attr: TokenStream, item: TokenStream) -> TokenStream {
     let input_name = &input.sig.ident;
 
     TokenStream::from(quote!(
-        fn main() -> Result<(), carmine_engine::errors::CarmineError<String>> {
+        fn main() -> Result<(), carmine_engine::errors::CarmineError> {
             carmine_engine::logging::init();
             carmine_engine::logging::debug!("Hello from carmine");
             #input_name();

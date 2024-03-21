@@ -1,0 +1,8 @@
+[package]
+name = "carmine_wrappers"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bindgen = "0.69.4"
+ash = { version = "0.37.3", features = ["linked"] }

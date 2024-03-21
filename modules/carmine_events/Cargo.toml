@@ -1,3 +1,4 @@
+workspace = { members = [ "events", "events_codegen" ] }
 [package]
 name = "carmine_events"
 version = "0.1.0"

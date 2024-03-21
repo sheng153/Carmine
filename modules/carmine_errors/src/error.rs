@@ -11,3 +11,12 @@ pub enum CarmineError {
     #[error("")]
     EventDispatchError(#[from] EventDispatchError),
 }
+
+impl CarmineError {
+    pub fn user() -> CarmineError {
+        CarmineError::UserError(UserError::None)
+    }
+    pub fn event_dispatch(msg: &'static str) -> CarmineError {
+        CarmineError::EventDispatchError(EventDispatchError(msg))
+    }
+}

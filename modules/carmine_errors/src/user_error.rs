@@ -1,4 +1,6 @@
 use thiserror::Error;
 
-#[derive(Error, Debug)]
-pub enum UserError {}
+#[derive(Error, derive_more::Display, Debug)]
+pub enum UserError {
+    None,
+}
