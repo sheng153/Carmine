@@ -1,1 +1,12 @@
 /target
+/modules/carmine_app/target
+/modules/carmine_audio/target
+/modules/carmine_ecs/target
+/modules/carmine_errors/target
+/modules/carmine_events/target
+/modules/carmine_exports/target
+/modules/carmine_file_io/target
+/modules/carmine_logging/target
+/modules/carmine_math/target
+/modules/carmine_render/target
+/modules/carmine_wrappers/target
